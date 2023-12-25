@@ -1,0 +1,104 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: #021823;
+    height: 100vh;
+}
+
+.anim {
+    height: 100vh;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.anim-talim span {
+    font-size: 70px;
+    color: #fff;
+    margin-top: -200px;
+    animation: text 0.5s linear 0s forwards;
+}
+.anim-najot span {
+    font-size: 70px;
+    color: #fff;
+    margin-top: -200px;
+    animation: text 0.5s linear 0s forwards;
+}
+
+.anim img {
+    width: 300px;
+    height: 300px;
+    margin-top: -500px;
+    animation: image 3s forwards;
+}
+
+.anim-najot {
+    display: flex;
+    gap: -2px;
+}
+.anim-talim {
+    display: flex;
+    gap: -2px;
+}
+
+.anim-talim span:nth-child(1) {
+    animation-delay: 2.5s;
+}
+.anim-talim span:nth-child(2) {
+    animation-delay: 2.4s;
+}
+.anim-talim span:nth-child(3) {
+    animation-delay: 2.3s;
+}
+.anim-talim span:nth-child(4) {
+    animation-delay: 2.2s;
+}
+.anim-talim span:nth-child(5) {
+    animation-delay: 2.1s;
+}
+
+.anim-najot span:nth-child(1) {
+    animation-delay: 2.1s;
+}
+.anim-najot span:nth-child(2) {
+    animation-delay: 2.2s;
+}
+.anim-najot span:nth-child(3) {
+    animation-delay: 2.3s;
+}
+.anim-najot span:nth-child(4) {
+    animation-delay: 2.4s;
+}
+.anim-najot span:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+@keyframes text {
+    0% {
+        margin-top: -200px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes image {
+    0% {
+      margin-top: -200px;
+    }
+    50% {
+      margin-top: 100px;
+      width: 400px;
+      height: 400px;
+    }
+    100% {
+      margin-top: 0px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
